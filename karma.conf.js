@@ -30,11 +30,11 @@ module.exports = function (config) {
       // webpack configuration
       devtool: 'inline-source-map',
       mode: 'development',
-      plugin: [
+      plugins: [
         new Dotenv({
           path: path.resolve(__dirname, '.env'),
-          safe: true,
           systemvars: true,
+          safe: true,
         }),
       ],
     },
